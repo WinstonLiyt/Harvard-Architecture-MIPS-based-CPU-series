@@ -17,7 +17,7 @@ The experiment aims to complete the design of a dynamic pipelined CPU that suppo
 
 ## Overall Structure of the Dynamic Pipeline
 The overall module structure of this project is as follows:
-
+![dynamic pipeline CPU](https://github.com/user-attachments/assets/96366bac-3ed9-41b3-896b-7a33702eadec)
 As shown in the figure above (dynamicPipeline_cpu), the design of the dynamic pipelined CPU is divided into the following five stages:
 
 - **Instruction Fetch (IF) Stage:** Responsible for fetching instructions from memory to prepare for decoding, involving the program counter (PC), instruction memory (IMEM), and several multiplexers that work together to retrieve instructions and compute addresses.
@@ -31,5 +31,6 @@ As shown in the figure above (dynamicPipeline_cpu), the design of the dynamic pi
 - **Write Back (WB) Stage:** Writes the results of computations or memory accesses back to the register file.
 
 Additionally, the structure includes several pipeline registers (such as PipeFD, PipeDE, PipeEM, etc.) located between each stage to store and pass intermediate variables.
+![image](https://github.com/user-attachments/assets/5e9cb9c6-186b-4e4a-8147-6d55028e62ea)
 
 The above figure illustrates the RTL analysis diagram of the dynamic pipelined CPU designed.
